@@ -37,6 +37,29 @@ var chart = AmCharts.makeChart("chartdiv",{
   ]
 });
 
-if(chart.titles[0].text != null){
-  chart.titles[0].text = "Bazinga!!";
+var c = [];
+
+  var colors = [
+   "red", "blue", "green"
+  ];
+
+function colorss(i){
+  if(i%2){
+    return "blue"
+  }else{
+    return 'red';
+  }
 }
+
+for(var i=0; i<100; i++){
+  $("body").append("<button>Hello</button>");
+  $("button").css({
+      'background-color': colorss(i)
+  });
+}
+// colors[Math.floor(Math.random() * Math.floor(3))]
+
+
+
+
+
